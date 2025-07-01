@@ -13,21 +13,13 @@ WebGIS Biodiversitas IPB University adalah sebuah website yang dirancang khusus 
 
 | Nama                     | NIM         |
 |--------------------------|-------------|
-| Malikus Syafaadi Nurfaza | G6401211121 |
-| Illinia Malika Putri     | G6401211103 |
-| Muhammad Khalil Adha     | G6401211060 |
-| Nechita Samantha         | G6401211043 |
-| Bella Agama              | G6401211038 |
-| Fatha Ariya Prasetya     | G6401211078 |
+| Ainil Mardhatilah        | G6401211121 |
+| Qonita Khairunissa       | G6401211103 |
 
 ## Tim Back-end
 
 | Nama                     | NIM         |
 |--------------------------|-------------|
-| DAFFA NOFIANSYAH         | G6401211098 |
-| Medina Fitri Maulida     | G6401211096 |
-| NISMARA MAYZALIA         | G6401211027 |
-| Ester Bina Br. Damanik   | G6401211030 |
-| Giras Arya Ichsani       | G6401211047 |
-| Fathan Abdul Mu'ti       | G6401211020 |
+| Noer Hanifah Suganda     | G6401221041 |
+| Tiffany Anastasia Jocelyn| G6401221005 |
 
