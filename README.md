@@ -13,8 +13,8 @@ WebGIS Biodiversitas IPB University adalah sebuah website yang dirancang khusus 
 
 | Nama                     | NIM         |
 |--------------------------|-------------|
-| Ainil Mardhatilah        | G6401211121 |
-| Qonita Khairunissa       | G6401211103 |
+| Ainil Mardhatilah        | G6401221045 |
+| Qonita Khairunissa       | G6401221116 |
 
 ## Tim Back-end
 
