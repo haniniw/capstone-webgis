@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebGIS IPB University</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="left-section">
+            <span class="logo">WebGIS</span>
+        </div>
+        <div class="center-section">
+            <a href="../index.php" class="nav-link">HomePage</a>
+            <a href="map.html" class="nav-link">Map</a>
+            <a href="../TablePage/DataTable.html" class="nav-link">Table</a>
+            
+        </div>
+        <div class="right-section">
+            <span class="welcome-text">Welcome</span>
+        </div>
+    </div>
+</nav>
+<div class="wrapper">
+    <!-- ===== Search Bar ===== -->
+    <div id="search-container" style="position: absolute; top: 80px; left: 20px; z-index:1000; background: white; padding: 8px; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.3);">
+        <input type="text" id="search-input" placeholder="Cari Nama (misal: Azalea)" style="width: 200px; padding:4px;" />
+        <button id="search-btn" style="padding:4px 8px;">Search</button>
+        <br>
+        <input type="text" id="location-input" placeholder="Cari Lokasi (misal: Kopicentrum)" style="width: 200px; padding:4px; margin-top:6px;" />
+        <button id="location-btn" style="padding:4px 8px;">Search Lokasi</button>
+    </div>
+    
+    <div id="render-map"></div>
+</div>
+<div class="settings-drawer hidden">
+    <button class="toggle-button">
+        <i class="fas fa-cog"></i>
+        <div>Settings</div> <!-- Label under the icon -->
+    </button>
+    <div class="settings-content">
+        <div class="setting">
+            <h4>Layer Settings</h4>
+            <button onclick="changeLayer('default')">Default</button>
+            <button onclick="changeLayer('satellite')">Satellite</button>
+            <button onclick="changeLayer('terrain')">Terrain</button>
+        </div>
+        <div class="setting">
+            <h4>Filter Settings</h4>
+            <label for="scale-filter">Filter by Plant:</label>
+            <select id="scale-filter" onchange="filterMarkers()">
+                <option value="all">All</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="popup-content.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

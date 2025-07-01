@@ -1,0 +1,292 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Mengubah font untuk semua teks dalam halaman */
+}
+
+/* Color Pallete */
+:root{
+    --color1: #1a4d2e;
+    --color2: #416b52;
+    --color3: #e8dfca;
+    --color4: #fdfcfa;
+    --color5: #242529;
+}
+/* Ganti warna latar belakang tabel */
+.table {
+    margin-top: 10px;
+    background-color: var(--color3);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Pagination Styling */
+.pagination .page-item.active .page-link {
+    background-color: #e8dfca;
+    border-color: #e8dfca;
+}
+
+
+/* Ganti warna latar belakang baris ganjil */
+.table tbody tr:nth-child(odd) {
+    background-color: var(--color3);
+}
+
+/* Ganti warna latar belakang baris saat dihover */
+.table tbody tr:hover {
+    background-color: var(--color4);
+}
+
+/* Ganti warna teks pada header kolom */
+.table thead th {
+    color: var(--color5);
+}
+
+/* Ganti warna teks pada body kolom */
+.table tbody td {
+    color: var(--color5);
+}
+
+/* Ganti warna teks pada tombol edit */
+.btn-warning {
+    color: #fff;
+}
+
+/* Ganti warna teks pada tombol hapus */
+.btn-danger {
+    color: #fff;
+}
+
+/* Ganti warna latar belakang pada tombol tambah data */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Ganti warna teks pada tombol tambah data */
+.btn-primary {
+    color: #fff;
+}
+
+.body{
+    background-color: var(--color1);
+}
+.body h2{
+    color: var(--color3);
+}
+
+
+.form-control{
+    border-radius: 24px;
+    border: 1px solid var(--Gray-20, #F3F4F6);
+    background: var(--color3);
+    font-size: 14px;
+/* Shadow - inner */
+box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06) inset;
+}
+
+.col-md-6 label {
+    color: white; /* Mengubah warna font menjadi putih */
+    font-size: 14px;
+}
+
+
+.searchBar{
+    display: flex;
+    width: 400px;
+    padding: 12px 1px;
+    align-items: center;
+    gap: 12px;
+}
+
+.styled-select {
+    border-radius: 24px;
+    border: 1px solid var(--Gray-20, #F3F4F6);
+    background: var(--color3) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7' /%3E%3C/svg%3E") no-repeat;
+    background-position: right 0.75rem center; /* Mengatur posisi panah dropdown */
+    background-size: 1em; /* Mengatur ukuran panah dropdown */
+    padding: 7px;
+    /* width: 100px; Menyesuaikan lebar tombol */
+    font-size:14px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06) inset;
+    margin-top: -2px; /* Menambahkan jarak antara label dan dropdown */
+    /* transform: translateX(100px); */
+}
+
+.item-per-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Menyelaraskan elemen ke kiri, ubah jika diperlukan */
+    margin-top: 0px;
+    margin-left: auto; /* Mendorong kotak pilihan ke kanan */
+    font-size: 14px;
+}
+
+.item-per-page-wrapper label {
+    font-size: 14px;
+    margin-bottom: 3px; /* Jarak antara label dan select */
+    color: white; /* Mengubah warna teks menjadi putih */
+}
+
+.item-per-page-wrapper select {
+    font-size: 14px;
+}
+
+
+
+
+/* Mengatur ukuran dan warna panah dropdown */
+.styled-select::-ms-expand {
+    display: none;
+}
+
+.styled-select:focus {
+    border-color: var(--Gray-20, #F3F4F6);
+    outline: 0;
+    box-shadow: none;
+}
+
+.ms-3{
+    border-radius: 24px;
+    border: 1px solid var(--Gray-20, #F3F4F6);
+    background: var(--color3);
+    padding: 6px;
+    margin-top: 24px;
+    display: inline-block;
+    transform: translateX(100px);
+    font-size: 14px;
+}
+
+.ver {
+    width: 1px; /* Lebar garis */
+    margin-top: 24px;
+    height: 38px; /* Tinggi garis */
+    border: 1px solid var(--Gray-20, #F3F4F6);
+    background: var(--color3);
+    border-radius: 24px;
+    position: absolute;
+    right: -265px; /* Geser ke kanan */
+}
+
+
+.prev {
+    width: 38px; /* Diameter lingkaran */
+    height: 38px; /* Diameter lingkaran */
+    border-radius: 100%; /* Untuk membuat lingkaran */
+    border: 1px solid var(--Gray-20, #F3F4F6);
+    background-color: #e8dfca; /* Warna lingkaran */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1a4d2e; /* Warna panah */
+    font-size: 24px; /* Ukuran panah */
+    margin: 10px; /* Jarak antara lingkaran */
+    margin-top: 34px;
+    position: absolute;
+    right: -330px
+}
+
+.prev:hover{
+    background-color: #F3F4F6;
+}
+
+.next {
+    width: 38px; /* Diameter lingkaran */
+    height: 38px; /* Diameter lingkaran */
+    border-radius: 100%; /* Untuk membuat lingkaran */
+    border: 1px solid var(--Gray-20, #F3F4F6);
+    background-color: #e8dfca; /* Warna lingkaran */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1a4d2e; /* Warna panah */
+    font-size: 24px; /* Ukuran panah */
+    margin: 10px; /* Jarak antara lingkaran */
+    margin-top: 34px;
+    position: absolute;
+    right: -380px
+}
+
+.next:hover{
+    background-color: #F3F4F6;
+}
+
+.rowmb-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 66%;
+
+}
+
+
+.navbar {
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: linear-gradient(135deg, #ECE4D3, #D5C3A1);
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; 
+    padding: 10px 20px; 
+    border-radius: 30px; 
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #102F1C;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.center-section {
+    display: flex;
+}
+
+.nav-link {
+    color: #102F1C;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: #4F6F52;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.welcome-text {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: solid #102F1C 1px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    color: #102F1C;
+}
+
